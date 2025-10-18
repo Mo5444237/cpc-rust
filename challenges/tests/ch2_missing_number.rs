@@ -10,6 +10,6 @@ fn test_missing_number() {
 
 #[test]
 fn test_missing_number_edge_cases() {
-    assert_eq!(missing_number(&[]), 0);  // from 0..=0, missing is 0
-    assert_eq!(missing_number(&[0]), 1);  // from 0..=1, missing is 1
+    assert_eq!(missing_number(&[]), 0); // from 0..=0, missing is 0
+    assert_eq!(missing_number(&[0]), 1); // from 0..=1, missing is 1
 }

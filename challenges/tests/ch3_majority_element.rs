@@ -11,7 +11,7 @@ fn test_majority() {
 
 #[test]
 fn test_majority_edge_cases() {
-    assert_eq!(majority(&[]), None); 
-    assert_eq!(majority(&[1, 2]), None); 
+    assert_eq!(majority(&[]), None);
+    assert_eq!(majority(&[1, 2]), None);
     assert_eq!(majority(&[1, 1, 2, 2, 2]), Some(2));
 }
