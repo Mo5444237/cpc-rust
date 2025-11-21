@@ -4,8 +4,8 @@ fn normalize(s: &str) -> String {
 }
 
 fn load_case(i: usize) -> (String, String) {
-    let input_path = format!("data/problem1/input{}.txt", i);
-    let output_path = format!("data/problem1/output{}.txt", i);
+    let input_path = format!("data/problem2/input{}.txt", i);
+    let output_path = format!("data/problem2/output{}.txt", i);
 
     let input = std::fs::read_to_string(std::path::Path::new("tests").join(&input_path))
         .unwrap_or_else(|_| panic!("Cannot read {}", input_path));
@@ -17,15 +17,15 @@ fn load_case(i: usize) -> (String, String) {
 }
 
 #[test]
-fn test_all_problem1_cases() {
-    for i in 0..=10 {
+fn test_all_problem2_cases() {
+    for i in 0..7 {
         let (input, expected) = load_case(i);
-        let got = handson2::problem1::solve(&input);
+        let got = handson2::problem2::solve(&input);
 
         assert_eq!(
             normalize(&got),
             normalize(&expected),
-            "Mismatch in case {}",
+            "Mismatch in Problem 2 case {}",
             i
         );
     }
