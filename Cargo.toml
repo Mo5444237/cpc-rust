@@ -2,5 +2,5 @@
 members = [
   "challenges",   
   "handson1"    
-, "handson2"]
+, "handson2", "handson3"]
 resolver = "2"
